@@ -3,14 +3,8 @@ import 'package:api_future/model/user_model.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-class ScrollableSheet extends StatefulWidget {
-  const ScrollableSheet({Key? key}) : super(key: key);
+class ScrollableSheet extends StatelessWidget {
 
-  @override
-  State<ScrollableSheet> createState() => _ScrollableSheetState();
-}
-
-class _ScrollableSheetState extends State<ScrollableSheet> {
   DraggableScrollableController controller = DraggableScrollableController();
 
   String endpoint = 'https://reqres.in/api/users?page=2';
